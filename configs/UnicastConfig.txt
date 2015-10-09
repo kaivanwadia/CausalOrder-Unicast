@@ -1,15 +1,19 @@
 5 //The number of processes in the system
 6000 // The port number of the router
 Delays // The delays between each pair of processes as an upper right matrix
-0 0 4 0 0
-0 0 0 0 0
+0 9 0 0 0
+0 0 7 0 0
 0 0 0 0 0
 0 0 0 0 0
 0 0 0 0 0
 Messages
-0 2 1 // It is a triple (sender, reciever, times[]). Process 0 send messages to Process 2 at 1s
-0 1 2 //Process 0 send messages to Process 1 at 2s
-1 2 3 //Process 1 send messages to Process 2 at 3s
-3 4 1,2 //Process 3 send messages to Process 4 at 1s, 2s
+0 1 1
+0 2 2
+2 3 3,6
+3 4 4
+4 1 5,8,11
+2 1 5
+3 1 7
+2 4 9
 EndMessages
-8 // Max running time of the system. This is to safely shut down the logging and all the sockets
+15 // Max running time of the system. This is to safely shut down the logging and all the sockets
